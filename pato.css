@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.header-part{
+    border-top: 5px solid red;
+    height: 130px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.918);
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    color: white;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul li a:hover{
+    color: red;
+    transition: all .6s;
+}
+.social-header i:hover{
+    color: red;
+    transition: .6s;
+}
+.social-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social-header i{
+    cursor: pointer;
+    color: white;
+
+}
+main section:nth-child(1){
+    background-image: url(https://preview.colorlib.com/theme/pato/images/slide1-01.jpg.webp);
+    height: 600px;
+    background-size: cover;
+}
+main section:nth-child(1){
+    position: relative;
+}
+.home-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-home-page button{
+    border-radius: 6px;
+
+    width: 100px;
+}
+.text-home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-sect2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 600px;
+    height: 430px;
+}
+.text-sect2 span{
+    font-size: 30px;
+    font-family: "Courgette", cursive;
+    color: red;
+}
+.text-sect2 h2{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+.text-sect2 p{
+    font-size: 20px;
+    color: #6A6A6A;
+    padding-bottom: 30px;;
+}
+.image-sect2 {
+    width: 390px;
+    height: 390px;
+    margin-left: 5rem;
+    overflow: hidden;
+}
+.text-sect2 div a{
+    display: flex;
+    gap: 10px;
+}
+.text-sect2 a:hover{
+    color: red;
+}
+.image-sect2 img{
+    width: 100%;
+}
+.image-sect2:hover{
+    transition: all ease-in .2s;
+    transition: all ease-in-out .4s;
+    border-radius: 15px;
+}
+.image-sect2 img:hover{
+    overflow: hidden;
+    transition: all ease-in-out .3s;
+    transform: scale(1.1)
+}
+.discover-pato{
+    height: 320px;
+    background-attachment: fixed;
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp);
+    background-size: cover;
+    position: relative;
+}
+.discover-pato-text{
+    position: absolute;
+    top: 6rem;
+    left: 35rem;
+    text-align: center;
+}
+.discover-pato-text span{
+    color: red;
+    font-family: "Courgette", cursor;
+    font-size: 50px;
+}
+.discover-pato-text h3{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    line-height: 1.2;
+}
+.choose-sect4{
+    margin-top: 5rem;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.image-choose-sect{
+    width: 100%;
+}
+.img-choose{
+    width: 370px;
+    height: 220px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.image-choose-sect:hover{
+    transition: all ease-in-out.5s;
+    transform: scale(1.1);
+}
+.about-restaurant h2{
+    padding-top: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.about-restaurant h2:hover{
+    color: red;
+}
+.about-restaurant p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #6A6A6A;
+    font-size: 15px;
+}
+.about-restaurant a{
+    font-size: 15px;
+}
+.about-restaurant a:hover{
+    color: red;
+}
+footer{
+    height: 40px;
+    color: white;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-sect5{
+    text-align: center;
+}
+.sect5{
+    display: flex;
+    justify-content: center;
+}
+.up-image-part{
+    display: flex;
+    gap: 30px;
+}
+.right-image-up{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.down-image-part{
+    display: flex;
+    gap: 30px;
+}
+.left-part-up{
+    display: flex;
+    gap: 30px;
+}
+.img-part1{
+    height: 492px;
+    width: 370px;
+}
+.img-part2{
+    width: 370px;
+    height: 231px;
+}
+.img-part3{
+    width: 770px;
+    height: 231px;
+}

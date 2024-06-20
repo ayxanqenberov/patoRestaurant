@@ -1,0 +1,38 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.about-photo{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    margin-top: 3rem;
+}
+nav ul{
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    border-radius: 15px;   
+    padding: 15px;
+    background-color: black;
+}
+nav ul li a{
+    color: white;
+}
+.about-photo nav{
+    animation-name: animated;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animated{
+    0% {border: 3px solid blue;background-color: yellow;}
+    25%{border: 5px solid red; background-color: orange;}
+    50%{border: 3px solid green; background-color: red;}
+    75%{border: 5px solid yellow; background-color: blue;}
+    100%{border: 2px solid orange;background-color: green;}
+}
