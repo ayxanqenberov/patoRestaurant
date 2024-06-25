@@ -11,7 +11,7 @@
     display: flex;
     background-color: rgba(0, 0, 0, 0.918);
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 nav ul li a{
     color: white;
@@ -36,7 +36,6 @@ nav ul li a:hover{
 .social-header i{
     cursor: pointer;
     color: white;
-
 }
 main section:nth-child(1){
     background-image: url(https://preview.colorlib.com/theme/pato/images/slide1-01.jpg.webp);
@@ -46,20 +45,80 @@ main section:nth-child(1){
 main section:nth-child(1){
     position: relative;
 }
+.home-page-parent{
+    height: 500px;
+}
 .home-page{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: absolute;
+    left: 23rem;
+    top: 11rem;
+}
+.button-home{
+    position: absolute;
+    left: 30px;
+    top: 17.5rem;
+}
+.button-home button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.button-home2{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+}
+.button-home2 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 .text-home-page button{
-    border-radius: 6px;
-
-    width: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    width: 135px;
+    height: 40px;
+    color: red;
+}
+.text-home-page button:hover{
+    color: white;
+    background-color: red;
+    transition: all .5s;
 }
 .text-home-page{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.text-home-page span{
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+}
+.text-home-page h2{
+    font-size: 90px;
+    font-family: "poppins";
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 10px;
 }
 .restaurant{
     display: flex;
@@ -117,6 +176,7 @@ main section:nth-child(1){
     transform: scale(1.1)
 }
 .discover-pato{
+    width: 100%;
     height: 320px;
     background-attachment: fixed;
     background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp);
@@ -141,16 +201,17 @@ main section:nth-child(1){
     letter-spacing: 10px;
     line-height: 1.2;
 }
-.choose-sect4{
-    margin-top: 5rem;
-    height: 520px;
+#divs{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    box-sizing: border-box;
+    justify-content: center;
 }
 .image-choose-sect{
     width: 100%;
+    flex-wrap: wrap;
 }
 .img-choose{
     width: 370px;
@@ -185,16 +246,18 @@ main section:nth-child(1){
 .about-restaurant a:hover{
     color: red;
 }
-footer{
-    height: 40px;
-    color: white;
-    background-color: #222222;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .text-sect5{
     text-align: center;
+}
+.text-sect5 span{
+    font-family: "Courgette";
+    font-size: 30px;
+    color: red;
+}
+.text-sect5 h3{
+    font-size: 50px;
+    font-family: "poppins";
+    text-transform: uppercase;
 }
 .sect5{
     display: flex;
@@ -212,6 +275,7 @@ footer{
 .down-image-part{
     display: flex;
     gap: 30px;
+    margin-top: 30px;
 }
 .left-part-up{
     display: flex;
@@ -226,6 +290,129 @@ footer{
     height: 231px;
 }
 .img-part3{
-    width: 770px;
     height: 231px;
+}
+.drink span{
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.drink{
+    overflow: hidden;
+}
+.img-part2{
+    overflow: hidden;
+    border-radius: 15px;
+    width: 370px;
+    height: 231px;
+}
+.img-part2:hover{
+    overflow: hidden;
+    transition: all ease-in-out .3s;
+    transform: scale(1.1)
+}
+/* phone design */
+@media (max-width: 600px){
+    .left-part-up{
+        justify-content: center;
+    }
+    .text-home-page{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .discover-pato-text {
+        text-align: center;
+        color: white;
+    }
+    .home-page{
+        justify-content: center;
+        align-items: center;
+    }
+    #home{
+        width: 100%;
+    }
+    .discover-pato{
+        width: 100%;
+    }
+    .image-sect2{
+        height: auto;
+    }
+    .text-sect2{
+        width: 100%;
+    }
+}
+/* tablet design */
+@media (max-width: 992px){
+    .header-part nav{
+        display: none;
+    }
+    .image-sect2{
+        width: 100%;
+    }
+    #divs{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .text-home-page{
+        text-align: center;
+    }
+    .image-sect5{
+        flex-wrap: wrap;
+    }
+    .discover-pato-text{
+       text-align: center;
+    }
+    .img-part3{
+        width: 500px;
+        justify-content: center;
+    }
+    .left-part-up{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .up-image-part{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .down-image-part{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1250px){
+    .home-page-parent{
+        width: 100%;
+        height: auto;
+    }
+    .home-page{
+        left: 12rem;
+        top: 12rem;
+        text-align: center;
+    }
+    .discover-pato-text{
+        top: 6rem;
+        left: 21rem;
+    }
+     #divs{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+     }
+     .sect5{
+        width: 100%;
+        flex-wrap: wrap;
+     }
+     .up-image-part{
+        justify-content: center;
+        flex-wrap: wrap;
+     }
+     .down-image-part{
+        justify-content: center;
+        flex-wrap: wrap;
+     }
 }
